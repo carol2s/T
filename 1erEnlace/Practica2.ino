@@ -4,14 +4,14 @@ int LedNaranja=10;
 int Tiempo=200;
 void setup()
 {
-  pinMode (LedRojo,OUTPUT);//Define LED Rojo como salida
+  pinMode (LedRojo,OUTPUT);
   pinMode (LedAzul,OUTPUT);
   pinMode (LedNaranja,OUTPUT);
 }
 
 void loop()
 {
- digitalWrite (LedRojo,HIGH);//Enciede LED Rojo
+ digitalWrite (LedRojo,HIGH);
   delay (Tiempo);
   digitalWrite (LedRojo,LOW);
   delay (Tiempo);
