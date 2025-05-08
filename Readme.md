@@ -6,10 +6,28 @@ En este proyecto lo que he relizado es compresión y práctica de los circuitos 
 
 04/04/25
 
+04/04/25
+
 ---
  ## SALIDA DIGITAL
 
 
+Programación y simulación  de una salida digital controlada por arduino; encender un led. 
+
+Componentes:
+
+
+---
+> · Arduino (1)
+
+> · Protoboard (Placa, 1)
+
+> · Resistencia (1)
+
+> · Led (1)
+
+
+---
 
 Una vez tengamos los componentes, prodecemos a su correspondiente colocación, es importante este procedimiento, y a preferencia u estetica, además de evitar confusiones,  cambiamos el color de los cables, el positivo de un color (rojo) y el negativo de otro (negro).
 Hecho esto, empezamos con el código/ programación para hacer que funcione. 
@@ -157,153 +175,129 @@ Ejemplo:
 https://www.tinkercad.com/things/dW18cLyNagt-brilliant-hango?sharecode=c8JjLn4MNBTQbAcdhHrhZg7f3IOh9AubUQJhYOx0s-Y
 
 ---
-
-
-
-
-
-
-
-
-
+---
 
 ---
- ## SALIDA DIGITAL
+sidebar_label: "Trabajo 2"
+sidebar_position: 1
+---
 
+08/04/25
 
-// C++ code
-//
-void setup()
-{
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+---
 
-void loop()
-{
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
-}
+## ESTRICTURA DE PROGRAMACIÓN
 
+Explica como se estructura la programación de ARDUINO, reconociendo las instruciones básicas, pinMode, digitalWrite y delay para controlar el comportamiento de tres leds conectados a la placa en los pines 8,9 y 10.
 
-___
-## USO DE VARIABLES
+* -> OUTPUT     |                                        -> INPUT  
+Como una entrada de salida. información         |            Entrada
 
+Tener en cuenta ñlas pautas básicas. 
+Como "Delay"
 
-int tiempo=200;//la variable tiempo le aignamos el valor 200
-int pin;//declaramos la variable pin,sin asignarle valor momentáneamente
+Ejemplo:
 
+https://www.tinkercad.com/things/20JQ4BA1BE7
 
-void setup()
-{
-  for (pin=8; pin<=12; pin++)//inica pin con alor iniacial 8 y se va incrementando hasta 12 
-  {
-    pinMode (pin,OUTPUT);//pin asume el valor asignado y lo declara como salida
-  }
-}
-
-void loop()
-{
-for (pin=8; pin<=12; pin++)
- { 
-  digitalWrite (pin,HIGH);
-  delay (tiempo);
-  digitalWrite (pin,LOW);
-  delay (tiempo);
- }  
-}
 ---
 
 
-## BLUCLE FOR
+---
+## PROTOBOARD
 
+La Protoboard nos permitirá realizar montaje de circuitos muy fácil, lo impportante es tener claro como funcinan para no cometer más errores. Existen varios tipos de este, por lo tanto entender la estructura es importante, en todas las columnas existe una referencia.
 
-int tiempo=100;
-int pin;
+Ejemplo:
 
-void setup()
-{
-for (pin=7;pin<=12;pin++)
- {
-  pinMode(pin,OUTPUT);   
- }
-}
-void loop()
-{
-secuencia_uno();
-secuencia_dos();
-}  
-//Sunrutinas  
-void secuencia_uno()
-{
-for(pin=7;pin<=12;pin++)
-{
-  digitalWrite(pin,HIGH);
-  delay (tiempo);
-  digitalWrite(pin,LOW);
-  delay(tiempo);
-  }
-}
-void secuencia_dos()
-{
-for(pin=12;pin>=7;pin--)
- {
-  digitalWrite(pin,HIGH);
-  delay (tiempo);
-  digitalWrite(pin,LOW);
-  delay(tiempo);
- }
-}
+https://www.tinkercad.com/things/lY7RaYN1AmJ-protoboard?sharecode=7Dhzp1tpGBoKaBy8YqDqxysEzlhlluL7YIybEpsORAc
+
+---
 ---
 
+## VARIABLES Y FUNCIONES
 
-## SUBRUNITAS
+Las variables son espacios en la memoria que tienen un nombre y un valor en programación hay distintos tipos de variables, depende del uso para indicar cual.
 
-// C++ code
-//
-void setup()
-{
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+Ejemplo:
 
-void loop()
-{
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
-}
+https://www.tinkercad.com/things/0IdXzcJfYp9-fantastic-jaban?sharecode=dK3kfdwVq3ngXq8pmCVg3f4vaPpGnEFvB5SF8kZVd-M
+
+---
 ---
 
-## SALIDAS ANALÓGICAS
+## ARGUMENTOS
 
+Datos que se utilizan en las funciones, el uso adecuado de estos permite un proceso de programación más agil. Se le llama argumento en el momento que se llama a la función, pero cuando se esta declarando la función se le lama parámetro. 
 
-int LedRojo=12;
-int LedAzul=11;
-int LedNaranja=10;
+Ejemplo:
 
-void setup()
-{
-pinMode(LedRojo,OUTPUT);
-pinMode(LedAzul,OUTPUT);
-pinMode(LedNaranja,OUTPUT);
-}
+https://www.tinkercad.com/things/jdiJfGV5nMW-argumentos?sharecode=2D0_DPWHgmg3TFyGWkidN2zVk-wXpkeTOVU2U5ogfyg
 
-void loop()
-{
-digitalWrite (LedRojo,HIGH);
-delay (300);
-digitalWrite (LedRojo,LOW);
-delay (300);
-digitalWrite (LedAzul,HIGH);
-delay (300);
-digitalWrite (LedAzul,LOW);
-delay (300);
-digitalWrite(LedNaranja,HIGH);
-delay (300);
-digitalWrite(LedNaranja,LOW);             
-delay (300);
- }
 ---
 
+---
+## CONDICIONALES
+
+Las condicionales nos permiten controlar el comportamiento de nuestros sistemas, mediante la comparación de valores o variables.
+
+if(condición)  
+ El conjunto de instrucciones que se ejecutan sí se cumple la condición.
+
+Con el msimo circuito  programacón del punto anterior.
+
+Dentro de los paréntesis hay una condición. Esta puede ser la comparación de dos valores o de dos variables, podemos utilizar distintos tipos de comparaciones. 
+
+Generalmnte el "if" se acompaña de un "else", este sirve para que en caso de la condición no se cumpla, el programa haga otra cosa (no tiene condición, simplemente es un descarte).
+
+Ejemplo: 
+
+https://www.tinkercad.com/things/5W9tQX11VWK-condicionales?sharecode=kKL-Sdk_ljMvli5APMGhopm4wAYew5Ga1tzHX2bF6BE
+
+## MONITOR SERIAL
+
+Nos permite establecer una comunicación entre el ARDUINO y nuestro ordenador, este nos permitira realizar distintos proyectos. 
+
+--> Enviar y recibir datos.
+
+A la variable le agregamos un valor, y probar que nos muestra. Para controlar el flujo de lectura agregamos una **condición** por ejemplo la función **serial*.
+Hay tener en cuenta los paréntesis; donde conrrespondan. 
+
+Ejemplo:
+
+
+##
+
+Todo lo que hemos visto anteriormente se aplicara en esta siguiente actividad.
+
+Realizar un circuito en las cuales se cumplan las condiciones especificadas en la guia, siguiendo un orden para una mejor compresión como nombrando cada componente.
+
+Lo que se pretnde es crear las siguientes funciones:
+
+· EncenderTodos {}
+
+·ApagarTodos {}
+
+·SecuenciaUnoDespuesOtro {}
+
+·SecuenciDosEnDos {}
+
+
+En cada función incluir un argumento que permita controlar el tiempo, y programar una condiciol if.
+
+Ejemplo:
+
+## CICLO FOR
+
+Este permite controlar las veces que se repite una función.
+
+En proyectos esto nos permite ahorrar códigos y tambien generar variantes en el comportamiento de nuestros componentes. 
+Se mostrara con el circuito de la anterior actividad 
+
+---> for (valor inicial; valor final; incremento)
+
+Instrucciones
+
+Ejemplo:
+
+## SENSOR DE DISTANCIAS
