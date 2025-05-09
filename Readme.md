@@ -175,10 +175,6 @@ https://www.tinkercad.com/things/dW18cLyNagt-brilliant-hango?sharecode=c8JjLn4MN
 ---
 ---
 
----
-sidebar_label: "Trabajo 2"
-sidebar_position: 1
----
 
 08/04/25
 
