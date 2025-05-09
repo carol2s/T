@@ -1,6 +1,6 @@
 **PROYECTO TINKERCAD**
 
-En este proyecto lo que he relizado es compresión y práctica de los circuitos con una Placa de Arduino, Placa Protoboard y Leds. Anotando las cosas que consideraba importantes de cada actividad.
+En este proyecto lo que he relizado es compresión y práctica de los circuitos con una Placa de Arduino en un programa - TINKERCAD, Placa Protoboard y Leds. Anotando las cosas que consideraba importantes de cada actividad.
 
 
 
