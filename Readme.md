@@ -6,8 +6,6 @@ En este proyecto lo que he relizado es compresión y práctica de los circuitos 
 
 04/04/25
 
-04/04/25
-
 ---
  ## SALIDA DIGITAL
 
@@ -300,4 +298,3 @@ Instrucciones
 
 Ejemplo:
 
-## SENSOR DE DISTANCIAS
